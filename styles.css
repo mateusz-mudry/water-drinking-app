@@ -1,0 +1,47 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.water-drinking-container {
+  width: 450px;
+  height: 600px;
+  border: 2px solid black;
+}
+
+.weight-input-container {
+  width: 450px;
+  height: 150px;
+  border: 2px solid black;
+}
+
+.water-result {
+  width: 450px;
+  height: 280px;
+  border: 2px solid black;
+}
+
+.water-amount {
+  display: flex;
+}
+
+.bottle {
+  width: 150px;
+  height: 160px;
+  border: 2px solid black;
+}
+
+.glass {
+  width: 150px;
+  height: 160px;
+  border: 2px solid black;
+}
+
+.cup {
+  width: 150px;
+  height: 160px;
+  border: 2px solid black;
+}
