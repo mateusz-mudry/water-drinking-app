@@ -16,6 +16,8 @@
   width: 450px;
   height: 150px;
   border: 2px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 .water-result {
