@@ -30,7 +30,7 @@
   display: flex;
 }
 
-.bottle {
+/* .bottle {
   width: 150px;
   height: 160px;
   border: 2px solid black;
@@ -46,4 +46,23 @@
   width: 150px;
   height: 160px;
   border: 2px solid black;
+} */
+
+.water-amount-div {
+  width: 150px;
+  height: 160px;
+  border: 2px solid black;
+}
+
+.image-div {
+  height: 110px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: 30px;
+  width: 30px;
 }
