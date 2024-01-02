@@ -18,7 +18,7 @@ body {
 }
 
 .water-drinking-container {
-  width: 450px;
+  width: 479px;
   height: 600px;
   border: 1px solid black;
   background-color: white;
@@ -27,15 +27,17 @@ body {
 }
 
 .weight-input-container {
-  width: 450px;
+  width: 479px;
   height: 150px;
   /* border: 2px solid black; */
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .water-result {
-  width: 450px;
+  width: 479px;
   height: 280px;
   border: 1px solid gray;
   display: flex;
@@ -43,9 +45,9 @@ body {
   align-items: center;
 }
 
-.water-amount {
+/* .water-amount {
   display: flex;
-}
+} */
 
 /* .bottle {
   width: 150px;
@@ -66,7 +68,7 @@ body {
 } */
 
 .water-amount-div {
-  width: 150px;
+  width: 159px;
   height: 160px;
   border: 1px solid gray;
 }
@@ -74,9 +76,9 @@ body {
 .image-div {
   height: 100px;
   width: 150px;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .image {
@@ -88,12 +90,12 @@ body {
   font-size: 22px;
 }
 
-.amount-div {
+/* .amount-div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 
 input {
   height: 40px;
@@ -155,7 +157,7 @@ button:hover {
   /* border: solid 2px #0066cc; */
 }
 
-.water-wave-div {
+/* .water-wave-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,10 +212,104 @@ button:hover {
     transform: translate(-50%, -50%) rotate(360deg);
     top: -30%;
   }
-}
+} */
 
 .result {
   position: relative;
   z-index: 1;
   font-size: 45px;
+}
+
+@media only screen and (max-width: 479px) {
+  .water-drinking-container {
+    width: 100vw;
+    height: 750px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 11px 12px 76px -21px rgba(0, 35, 41, 0.52);
+  }
+
+  .water-amount-div {
+    width: 100vw;
+    display: flex;
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 479px) {
+  .water-amount {
+    display: flex;
+  }
+
+  .water-wave-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .water-wave {
+    width: 250px;
+    height: 250px;
+    background: #35b3e7;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.8),
+      0 0 10px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .water-wave:after,
+  .water-wave:before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: 50%;
+    background: #ffff;
+  }
+
+  .water-wave:after {
+    border-radius: 45%;
+    animation: water-wave 5s linear infinite;
+  }
+
+  .water-wave:before {
+    border-radius: 35%;
+    background: rgba(255, 255, 255, 0.3);
+    animation: water-wave 5s linear infinite;
+  }
+
+  @keyframes water-wave {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+      top: -30%;
+    }
+    50% {
+      top: -50%;
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+      top: -30%;
+    }
+  }
+
+  .amount-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
