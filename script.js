@@ -15,5 +15,8 @@ function waterAmount() {
   cupDiv.textContent = (weight / 200).toFixed(1);
 }
 
-let inputElement = document.getElementById("my-weight");
-inputElement.addEventListener("input", waterAmount);
+// let inputElement = document.getElementById("my-weight");
+// inputElement.addEventListener("input", waterAmount);
+
+let calculateButton = document.getElementById("calculateButton");
+calculateButton.addEventListener("click", waterAmount);

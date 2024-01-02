@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .container {
@@ -217,7 +218,7 @@ button:hover {
 .result {
   position: relative;
   z-index: 1;
-  font-size: 45px;
+  font-size: 70px;
 }
 
 @media only screen and (max-width: 479px) {
@@ -312,4 +313,8 @@ button:hover {
     justify-content: center;
     align-items: center;
   }
+}
+
+.input-div {
+  display: flex;
 }
