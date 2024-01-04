@@ -20,7 +20,7 @@ body {
 
 .water-drinking-container {
   width: 479px;
-  height: 600px;
+  /* height: 600px; */
   border: 1px solid black;
   background-color: white;
   border-radius: 20px;
@@ -29,7 +29,7 @@ body {
 
 .weight-input-container {
   width: 479px;
-  height: 150px;
+  /* height: 150px; */
   /* border: 2px solid black; */
   display: flex;
   justify-content: center;
@@ -77,9 +77,6 @@ body {
 .image-div {
   height: 100px;
   width: 150px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .image {
@@ -99,8 +96,9 @@ body {
 } */
 
 input {
-  height: 40px;
-  width: 100px;
+  height: 25px;
+  width: 80px;
+  font-family: "Bebas Neue", sans-serif;
   border-color: #cccccc;
   text-align: center;
   padding: 10px;
@@ -129,32 +127,46 @@ input:focus {
   font-size: 40px;
 }
 
+/* .result:hover {
+  transition: 500ms;
+  font-size: 75px;
+} */
+
 button {
   /* font-family: Roboto, sans-serif; */
-  width: 150px;
-  font-weight: 100;
-  font-size: 20px;
-  color: #fff;
-  background: linear-gradient(174deg, #00d4ff 0%, #1140edd3 100%);
-  padding: 10px 30px;
+  width: 160px;
+  height: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 25px;
+  background-color: #35b3e7;
+  color: #ffff;
+  /* font-weight: 100; */
+  /* font-size: 20px; */
+  /* color: #fff; */
+  /* background: linear-gradient(174deg, #00d4ff 0%, #1140edd3 100%); */
+  /* padding: 10px 30px;
   border: none;
   box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
   border-radius: 20px;
   transition: 375ms;
-  transform: translateY(0);
-  display: flex;
+  transform: translateY(0); */
+  /* display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; */
+  border: none;
   cursor: pointer;
   text-transform: uppercase;
+  margin: 10px;
+  border-radius: 50px;
 }
 
 button:hover {
-  transition: 375ms;
-  padding: 10px 49px;
-  transform: translateY(-0px);
-  background: linear-gradient(174deg, #00d4ff 0%, #1140edd3 100%);
-  color: #ffffff;
+  transition: 500ms;
+  background-color: #72caef;
+  /* width: 180px; */
+  /* transform: translateY(-0px); */
+  /* background: linear-gradient(174deg, #00d4ff 0%, #1140edd3 100%);
+  color: #ffffff; */
   /* border: solid 2px #0066cc; */
 }
 
@@ -317,4 +329,14 @@ button:hover {
 
 .input-div {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70px;
+  width: 140px;
+}
+
+.input-label {
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }

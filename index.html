@@ -17,7 +17,9 @@
       <div class="water-drinking-container">
         <div class="water-calculator">
           <div class="weight-input-container">
-            <label for="my-weight">Wprowadź swoją wagę:</label>
+            <label class="input-label" for="my-weight"
+              >Wprowadź swoją wagę:</label
+            >
             <div class="input-div">
               <input
                 type="number"
@@ -25,7 +27,7 @@
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                 maxlength="4"
               />
-              <p>KG</p>
+              <p class="input-label">KG</p>
             </div>
             <button id="calculateButton">Oblicz</button>
           </div>
