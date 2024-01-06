@@ -5,7 +5,7 @@ body {
 
 .container {
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@ body {
 }
 
 .weight-input-container {
-  width: 479px;
+  /* width: 479px; */
   /* height: 150px; */
   /* border: 2px solid black; */
   display: flex;
@@ -38,7 +38,7 @@ body {
 }
 
 .water-result {
-  width: 479px;
+  /* width: 479px; */
   height: 280px;
   border: 1px solid gray;
   display: flex;
@@ -97,7 +97,7 @@ body {
 
 input {
   height: 25px;
-  width: 80px;
+  max-width: 80px;
   font-family: "Bebas Neue", sans-serif;
   border-color: #cccccc;
   text-align: center;
@@ -156,7 +156,7 @@ button {
   border: none;
   cursor: pointer;
   text-transform: uppercase;
-  margin: 10px;
+  margin: 10px 10px 15px 10px;
   border-radius: 50px;
 }
 
@@ -247,6 +247,18 @@ button:hover {
     width: 100vw;
     display: flex;
     height: 100px;
+  }
+
+  /* .weight-input-container {
+  } */
+
+  /* input {
+    width: 80px;
+  } */
+
+  button {
+    width: 120px;
+    height: 50px;
   }
 }
 
@@ -339,4 +351,8 @@ button:hover {
   font-size: 25px;
   padding-top: 10px;
   padding-bottom: 5px;
+}
+
+footer {
+  height: 10vh;
 }
