@@ -5,7 +5,7 @@ body {
 
 .container {
   width: 100%;
-  min-height: 90vh;
+  min-height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,6 +121,7 @@ input::-webkit-inner-spin-button {
 input:focus {
   outline: none;
   box-shadow: 0px 0px 15px 0px rgba(131, 186, 237, 0.473);
+  transition: 300ms;
 }
 
 .result {
@@ -170,7 +171,7 @@ button:hover {
   /* border: solid 2px #0066cc; */
 }
 
-/* .water-wave-div {
+.water-wave-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,7 +226,7 @@ button:hover {
     transform: translate(-50%, -50%) rotate(360deg);
     top: -30%;
   }
-} */
+}
 
 .result {
   position: relative;
@@ -249,6 +250,14 @@ button:hover {
     height: 100px;
   }
 
+  .container {
+    height: 100vh;
+  }
+
+  footer {
+    height: 15vh;
+  }
+
   /* .weight-input-container {
   } */
 
@@ -267,15 +276,15 @@ button:hover {
     display: flex;
   }
 
-  .water-wave-div {
+  /* .water-wave-div {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 2;
-  }
+  } */
 
-  .water-wave {
+  /* .water-wave {
     width: 250px;
     height: 250px;
     background: #35b3e7;
@@ -287,9 +296,9 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
 
-  .water-wave:after,
+  /* .water-wave:after,
   .water-wave:before {
     content: "";
     position: absolute;
@@ -298,20 +307,20 @@ button:hover {
     top: -50%;
     left: 50%;
     background: #ffff;
-  }
+  } */
 
-  .water-wave:after {
+  /* .water-wave:after {
     border-radius: 45%;
     animation: water-wave 5s linear infinite;
-  }
+  } */
 
-  .water-wave:before {
+  /* .water-wave:before {
     border-radius: 35%;
     background: rgba(255, 255, 255, 0.3);
     animation: water-wave 5s linear infinite;
-  }
+  } */
 
-  @keyframes water-wave {
+  /* @keyframes water-wave {
     0% {
       transform: translate(-50%, -50%) rotate(0deg);
       top: -30%;
@@ -322,21 +331,20 @@ button:hover {
     100% {
       transform: translate(-50%, -50%) rotate(360deg);
       top: -30%;
-    }
-  }
+    } */
+}
 
-  .amount-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+.amount-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  .image-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .input-div {
@@ -354,5 +362,56 @@ button:hover {
 }
 
 footer {
-  height: 10vh;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-image {
+  height: 35px;
+  width: 35px;
+}
+
+.icon-image:hover {
+  transition: 300ms;
+  height: 40px;
+  width: 40px;
+}
+
+.footer-container {
+  width: 479px;
+  /* background-color: bisque; */
+}
+
+.icon-div-container {
+  display: flex;
+}
+
+.icon-div {
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-info {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-contact-info {
+  display: flex;
+}
+
+.footer-contact-div {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  height: 25px;
+  width: 25px;
 }
