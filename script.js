@@ -8,10 +8,10 @@ function animateNumber(element, targetNumber) {
       currentNumber += Math.ceil(
         (targetNumber - currentNumber) / animationSpeed
       );
-      element.textContent = currentNumber + " ML";
+      element.textContent = currentNumber;
       setTimeout(update, updateInterval);
     } else {
-      element.textContent = targetNumber + " ML";
+      element.textContent = targetNumber;
     }
   };
 
@@ -30,13 +30,16 @@ function waterAmount() {
   animateNumber(resultDiv, weight);
 
   let bottleDiv = document.getElementById("bottle");
-  bottleDiv.textContent = (weight / 1500).toFixed(1);
+  bottleDiv.textContent = "0";
+  animateNumber(bottleDiv, (weight / 1500).toFixed(1));
 
   let glassDiv = document.getElementById("glass");
-  glassDiv.textContent = (weight / 350).toFixed(1);
+  glassDiv.textContent = "0";
+  animateNumber(glassDiv, (weight / 350).toFixed(1));
 
   let cupDiv = document.getElementById("cup");
-  cupDiv.textContent = (weight / 200).toFixed(1);
+  cupDiv.textContent = "0";
+  animateNumber(cupDiv, (weight / 200).toFixed(1));
 }
 
 // let inputElement = document.getElementById("my-weight");

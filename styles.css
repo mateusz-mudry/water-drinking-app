@@ -162,7 +162,7 @@ button {
 }
 
 button:hover {
-  transition: 500ms;
+  transition: 400ms;
   background-color: #72caef;
   /* width: 180px; */
   /* transform: translateY(-0px); */
@@ -182,7 +182,7 @@ button:hover {
 }
 
 .reset:hover {
-  transition: 500ms;
+  transition: 400ms;
   background-color: rgb(188, 188, 188);
 }
 
