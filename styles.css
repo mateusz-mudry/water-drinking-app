@@ -171,6 +171,21 @@ button:hover {
   /* border: solid 2px #0066cc; */
 }
 
+.reset {
+  width: 100px;
+  height: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15px;
+  background-color: lightgray;
+  color: #ffff;
+  margin-top: 0;
+}
+
+.reset:hover {
+  transition: 500ms;
+  background-color: rgb(188, 188, 188);
+}
+
 .water-wave-div {
   display: flex;
   justify-content: center;
@@ -404,12 +419,14 @@ footer p {
 }
 
 .contact-container {
-  height: 140px;
+  height: 120px;
   width: 170px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   /* background-color: aquamarine; */
 }
 
@@ -467,5 +484,5 @@ footer p {
 }
 
 .info-container {
-  width: 230px;
+  width: 210px;
 }
