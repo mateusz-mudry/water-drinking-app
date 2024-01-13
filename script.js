@@ -26,7 +26,7 @@ function waterAmount() {
   // resultDiv.textContent = weight + " ml";
 
   let resultDiv = document.getElementById("result");
-  resultDiv.textContent = "0 ML";
+  resultDiv.textContent = "0";
   animateNumber(resultDiv, weight);
 
   let bottleDiv = document.getElementById("bottle");
@@ -45,5 +45,20 @@ function waterAmount() {
 // let inputElement = document.getElementById("my-weight");
 // inputElement.addEventListener("input", waterAmount);
 
+function resetCalculator() {
+  const resultDiv = document.getElementById("result");
+  const bottleDiv = document.getElementById("bottle");
+  const glassDiv = document.getElementById("glass");
+  const cupDiv = document.getElementById("cup");
+
+  resultDiv.textContent = "0";
+  bottleDiv.textContent = "0";
+  glassDiv.textContent = "0";
+  cupDiv.textContent = "0";
+}
+
 let calculateButton = document.getElementById("calculateButton");
 calculateButton.addEventListener("click", waterAmount);
+
+let resetButton = document.getElementById("resetButton");
+resetButton.addEventListener("click", resetCalculator);
